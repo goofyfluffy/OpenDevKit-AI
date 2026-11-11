@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opendevkit-ai"
+version = "0.1.0"
+description = "Local-first open-source Python code analysis with optional Ollama explanations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "OpenDevKit AI contributors"}]
+
+[project.scripts]
+opendevkit = "opendevkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["opendevkit*"]
